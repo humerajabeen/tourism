@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOURISM</title>
+
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" media="screen and (max-width:1026px)" href="phone.css">
+<style>
+    body {
+        /* background: url('tt.jpg'); */
+        margin: 4px;
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body::before {
+        background: url('tt.jpg');
+        content: "";
+        position: absolute;
+        background-size: cover;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 67%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    .logo h1 img {
+        margin: 0px;
+        width: 5%;
+    }
+
+    h1 {
+        color: rgb(51, 0, 255);
+        margin: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .logo {
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    li {
+        display: inline;
+        list-style: none;
+        padding: 1rem;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+    }
+
+    li:hover {
+        color: rgb(0, 13, 254);
+        cursor: pointer;
+    }
+
+    .nav {
+        /* background-color: rgb(42, 185, 236); */
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .nav img {
+        width: 25px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+    .class {
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .nav #search {
+        width: 250px;
+        height: 20px;
+        display: block;
+        justify-content: center;
+    }
+
+    #search {
+        float: right;
+        padding: 3px;
+        border-radius: 2rem;
+        margin-top: 7.14px;
+        margin-right: 16px;
+    }
+
+    .container {
+        display: flex;
+        height: 5rem;
+        margin-top: 5rem;
+        justify-content: space-around;
+    }
+
+    .item:hover {
+        cursor: pointer;
+        color: rgb(240, 187, 29);
+    }
+
+    .item {
+        color: rgb(255, 255, 255);
+        border: solid 2px rgb(0, 0, 0);
+        width: 40%;
+        height: 60px;
+        text-align: center;
+        padding: 10px;
+        margin: 1rem;
+        font-weight: bold;
+    }
+
+    #item-1 {
+        background-image: url('a.jpg');
+        align-self: flex-end;
+        background-size: cover;
+        font-family: 'Caveat', cursive;
+    }
+
+    /* .item::before {
+        content: "";
+        background-image: url('adventure.jpg.crdownload');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 1.6%;
+        top:41%;
+        width: 14%;
+        height: 14.5%;
+        z-index: -1;
+        opacity: 2; 
+    } */
+
+    #item-2 {
+        background-image: url('b.webp');
+        background-size: cover;
+        align-self: flex-end;
+        font-family: 'Caveat', cursive;
+    }
+
+    #item-3 {
+        background-image: url('c.jpg');
+        background-size: cover;
+        align-self: flex-end;
+        font-family: 'Caveat', cursive;
+    }
+
+    #item-4 {
+        background-image: url('e.jpg');
+        background-size: cover;
+        align-self: flex-end;
+        font-family: 'Caveat', cursive;
+    }
+
+    #item-5 {
+        background-image: url('wild.jpg');
+        background-size: cover;
+        align-self: flex-end;
+        font-family: 'Caveat', cursive;
+    }
+
+    #item-6 {
+        background-image: url('busi.jpg');
+        background-size: cover;
+        align-self: flex-end;
+        font-family: 'Caveat', cursive;
+    }
+
+    .help {
+        float: right;
+        /* margin-top: 18rem;
+        margin-right: 1rem; */
+        position: sticky;
+        background-color: black;
+        padding: 10px;
+        color: white;
+    }
+
+    .contain {
+        color: rgb(0, 0, 0);
+        display: flex;
+        margin-top: 50px;
+    }
+
+    #flex1 {
+        /* border: 2px solid ; */
+        margin: 10px;
+        padding: 15px;
+        width: 400px;
+        border-radius: 23px;
+        background-color: rgb(183, 233, 247);
+        text-align: center;
+    }
+
+    #flex2 {
+        /* border: 2px solid salmon; */
+        margin: 10px;
+        padding: 15px;
+        width: 400px;
+        border-radius: 23px;
+        background-color: rgb(183, 233, 247);
+        text-align: center;
+    }
+
+    #flex3 {
+        /* border: 2px solid salmon; */
+        margin: 10px;
+        padding: 15px;
+        width: 400px;
+        border-radius: 23px;
+        background-color: rgb(183, 233, 247);
+        text-align: center;
+    }
+
+    #flex1:hover {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    #flex2:hover {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    #flex3:hover {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    h2 {
+        background-color: rgb(214, 250, 252);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        border-radius: 5px;
+        margin: 0%;
+        border: 0%;
+    }
+
+    .clients {
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clients img:hover {
+        cursor: pointer;
+    }
+
+    .clients img {
+        /* border: 2px solid saddlebrown; */
+        width: 210px;
+        padding: 3px;
+        margin: 3px;
+        height: 150px;
+    }
+
+    footer {
+        background: black;
+        color: white;
+        padding: 3px;
+        text-align: center;
+
+    }
+
+    .help:hover {
+        color: wheat;
+    }
+</style>
+
+
+<body>
+    <div class="logo">
+        <h1><img src="globe.png" alt="globe">Around the Globe</h1>
+    </div>
+    <div class="nav">
+        <ol>
+            <li class="class">Home</li>
+            <li class="class">Trips</li>
+            <li class="class">Reservations</li>
+            <li class="class">Budgets</li>
+            <li class="class">Contact Us</li>
+            <img src="Search.png" alt="">
+            <input type="text" placeholder="search" id="search">
+        </ol>
+
+    </div>
+    <div class="right">
+
+    </div>
+    <div class="container">
+        <div class="item" id="item-1">Adventure Tourism</div>
+        <div class="item" id="item-2">Beach Tourism</div>
+        <div class="item" id="item-3">Cultural Tourism</div>
+        <div class="item" id="item-4">Economical Tourism</div>
+        <div class="item" id="item-5">Wildlife Tourism</div>
+        <div class="item" id="item-6">Business Tourism</div>
+    </div>
+
+    <div class="contain">
+        <div id="flex1"><a href="index1.html">Destinations</a></div>
+        <div id="flex2"><a href="index2.html">Plan your journey</a></div>
+        <div id="flex3"><a href="index3.html">Ratings</a></div>
+    </div>
+    <h2>Our Clients</h2>
+    <div class="clients">
+        <img src="c1.png" alt="skyscanner" id="c1">
+        <img src="c2.png" alt="airbnb" id="c2">
+        <img src="c3.png" alt="makemytrip" id="c3">
+        <img src="c4.png" alt="tripadvisor" id="c4">
+        <img src="c5.png" alt="intrepid" id="c5">
+    </div>
+    <footer>
+        <div class="foot"> Copyright  &copy; myTourism.com. All rights reserved!</div>       
+    </footer>
+</body>
+
+</html>

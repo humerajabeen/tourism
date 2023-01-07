@@ -1,0 +1,63 @@
+body {
+    background: url('orange.jpeg');
+   display: inline-block;
+   height: auto;
+   width: 100%;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+ h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30rem;
+    float: left;
+    width: 25rem;
+}
+
+.item {
+    /* width: 30rem; */
+    padding: 2rem;
+}
+
+.contain {
+    display: flex;
+    float: left;
+    margin-top: 25rem;
+    flex-direction:column;
+    align-items:center;
+  
+}
+
+/* #flex1 {
+    width: 10rem;
+}
+
+#flex2 {
+    width: 10rem;
+}
+
+#flex3 {
+    width: 10rem;
+} */
+
+h2{
+   margin-top:75rem;
+}
+.clients {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22rem;
+}
+footer{
+    margin-top: 21rem;
+    
+}
+
+/* Loving you is like breathing */
